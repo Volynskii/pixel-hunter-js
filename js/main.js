@@ -17,11 +17,42 @@ console.log(sliderControls);
 // slides informations
   var slides = displayArray;
     slidesLength = slides.length;
-
+var arrowLeftKeyCode = 37;
+var arrowRightKeyCode = 39;
 // slides array
   var slidesArr = [].slice.call(slides);
 // reverse array sorting
   slidesArr = slidesArr.reverse();
+var moveNext = function (e) {
+  if(e.keyCode === arrowRightKeyCode) {
+    next = e.target,
+      prev = next.previousElementSibling,
+      nextSlide = slidesArr[slideCurrent + 1],
+      slide = slidesArr[slideCurrent];
+    slideCurrent += 1;
+
+    if (slideCurrent === slidesLength - 1) {
+      document.removeEventListener("keydown",moveNext)
+    }
+  }
+    if (e.keyCode === arrowLeftKeyCode) {
+      slideCurrent -= 1;
+
+      prev = e.target,
+        next = prev.nextElementSibling,
+        prevSlide = slidesArr[slideCurrent + 1],
+        slide = slidesArr[slideCurrent];
+
+      if (slideCurrent === slidesLength - 2) {
+        //need to disable slider somehow
+      }
+
+      if (slideCurrent === 0) {
+        prev.disabled = true;
+      }
+    }
+  mainScreen.innerHTML = slides[slideCurrent].innerHTML;
+  };
 
  // slide current
   var slideCurrent = 0;
@@ -64,38 +95,4 @@ console.log(sliderControls);
       console.log(slides[slideCurrent])
       mainScreen.innerHTML = slides[slideCurrent].innerHTML;
 });
-  var arrowLeftKeyCode = 37;
-var arrowRightKeyCode = 39;
-document.addEventListener("keydown", function (e) {
- if(e.keyCode === arrowRightKeyCode) {
-   next = e.target,
-     prev = next.previousElementSibling,
-     nextSlide = slidesArr[slideCurrent + 1],
-     slide = slidesArr[slideCurrent];
-   slideCurrent += 1;
-
-   if(slideCurrent > 0) {
-     prev.disabled = false;
-   }
-   if(slideCurrent === slidesLength - 1){
-     next.disabled = true;
-   }
- };
-  if(e.keyCode === arrowLeftKeyCode) {
-    slideCurrent -= 1;
-
-    prev = e.target,
-      next = prev.nextElementSibling,
-      prevSlide = slidesArr[slideCurrent + 1],
-      slide = slidesArr[slideCurrent];
-
-    if(slideCurrent === slidesLength - 2){
-      //need to disable slider somehow
-    }
-
-    if(slideCurrent === 0){
-      prev.disabled = true;
-    }
-  };
-  mainScreen.innerHTML = slides[slideCurrent].innerHTML;
-});
+document.addEventListener("keydown",moveNext);
