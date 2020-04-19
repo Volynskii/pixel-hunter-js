@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fde6727b-b507-4a6c-bf12-11f6316a3f2f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contributing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/central.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/game.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/greeting.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/intro.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/result.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/rules.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/social.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/stats.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +88,7 @@
       <workItem from="1585894443936" duration="2122000" />
       <workItem from="1586834414153" duration="8106000" />
       <workItem from="1587107858818" duration="4297000" />
-      <workItem from="1587189077237" duration="8106000" />
+      <workItem from="1587189077237" duration="8526000" />
     </task>
     <servers />
   </component>
